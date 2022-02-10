@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evolution Bakery: Order Form</title>
+        <link type="text/css" href="style.css" rel="stylesheet"/>
+
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Order Form</h1>
+        </header>
+        
+        <ul>
+            <li><a class="navbar-brand" href="index.html">
+                <div class="logo-image">
+                      <img src="logo.png" class="img-fluid" width='70'>
+                </div>
+            </a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+
+        <div class="footer">
+            Evolution Bakery | 123 Main Street | Mountain View, CA 94024 | 650-987-6543
+        </div>
+
+        <p>If you're interested in ordering a cake, please fill out the following form:</p>
+
+        <form action="#" method="post">
+            <label>First Name:</label>
+            <input type="text" name="first" id="first_name" required="1">
+            <br>
+            <br>
+
+            <label>Last Name:</label>
+            <input type="text" name="last" id="last_name" required="1">
+            <br>
+            <br>
+
+            <label>Phone Number:</label>
+            <input type="text" name="last" id="phone_number" required="1"
+                placeholder="000-000-0000">
+            <br>
+            <br>
+
+            <label>Pick Up Date:</label>
+            <input type="text" name="date" id="pickup_date" required="1"
+                placeholder="00/00/00">
+            <br>
+            <br>
+            
+            Cake size:
+            <input type="radio" name="size" value="6 inch round">
+            6 inch round &nbsp;
+            <input type="radio" name="size" value="8 inch round">
+            8 inch round &nbsp;
+            <input type="radio" name="size" value="10 inch round">
+            10 inch round &nbsp;
+            <br>
+            <br>
+
+            Cake flavor:
+            <select name="cakeflavor">
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="red velvet">Red Velvet</option>
+                <option value="lemon">Lemon</option>
+                <option value="funfetti">Funfetti</option>
+            </select>
+            <br>
+            <br>
+
+            Frosting flavor:
+            <select name="frostingflavor">
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="cream cheese">Cream Cheese</option>
+                <option value="lemon">Lemon</option>
+            </select>
+            <br>
+            <br>
+
+            Toppings:
+            <input type="checkbox" name="sprinkles" value="sprinkles">
+            Sprinkles
+            <input type="checkbox" name="strawberries" value="strawberries">
+            Strawberries
+            <input type="checkbox" name="chocolate glaze" value="chocolate-glaze">
+            Chocolate Glaze
+            <br>
+            <br>
+
+            <label>Handwritten Message (optional):</label>
+            <input type="text" name="message" id="cake_message" required="0"
+                placeholder="ex. Happy Birthday!">
+            <br>
+            <br>
+
+            Occasion:
+            <select name="occasion">
+                <option value="bday">Birthday</option>
+                <option value="graduation">Graduation</option>
+                <option value="wedding">Wedding</option>
+                <option value="holiday">Holiday</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+
+            <label>Venmo/Paypal Username:</label>
+            <input type="text" name="payment" id="payment_method" required="1"
+                placeholder="ex. bob-smith">
+            <br>
+            <br>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
